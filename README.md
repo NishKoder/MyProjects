@@ -1,26 +1,71 @@
-# Project Name
+# this is my end to end project
 
-A brief description of the project.
+# first initialize the git
 
-## Table of Contents
+```
+git init
+```
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+```
+git add abc.txt
+git add .
+```
+```
+git commit -m "this is my first commit"
+```
 
-## Installation
+```
 
-Instructions on how to install the project.
+git pull
 
-## Usage
+```
 
-Instructions on how to use the project.
+```
+bash your_file_name.sh
+```
 
-## Contributing
+```
+python setup.py install
+```
 
-Guidelines on how to contribute to the project.
+# another way you can mention -e . in your requirement file and you can run
 
-## License
+```
+pip install -r requirements.txt
+```
 
-Information about the project's license.
+
+## MLflow
+
+[Documentation](https://mlflow.org/docs/latest/index.html)
+
+
+##### local cmd
+- mlflow ui
+
+### dagshub
+[dagshub](https://dagshub.com/)
+
+MLFLOW_TRACKING_URI=https://dagshub.com/sunny.savita/fsdsmendtoend.mlflow \
+MLFLOW_TRACKING_USERNAME=sunny.savita \
+MLFLOW_TRACKING_PASSWORD=3c2c8cd1436ad32b510cfdd84944a528ba4fb650 \
+python script.py
+
+Run this to export as env variables:
+
+```bash
+
+export MLFLOW_TRACKING_URI=https://dagshub.com/sunny.savita/fsdsmendtoend.mlflow
+
+export MLFLOW_TRACKING_USERNAME=sunny.savita
+
+export MLFLOW_TRACKING_PASSWORD=3c2c8cd1436ad32b510cfdd84944a528ba4fb650
+
+```
+
+
+### DVC cmd
+- dvc init
+- dvc repro
+- dvc dag
+

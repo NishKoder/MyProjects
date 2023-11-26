@@ -1,8 +1,11 @@
-numpy
 pandas
-matplotlib
 scikit-learn
+numpy
 seaborn
-flask
+ipykernel
+Flask
+#this is more stable version
+mlflow==2.2.2
+dvc
 
--e .
+#-e .
